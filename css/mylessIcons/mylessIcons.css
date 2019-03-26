@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'mylessIcons';
+  src:  url('fonts/mylessIcons.eot?q42qo2');
+  src:  url('fonts/mylessIcons.eot?q42qo2#iefix') format('embedded-opentype'),
+    url('fonts/mylessIcons.ttf?q42qo2') format('truetype'),
+    url('fonts/mylessIcons.woff?q42qo2') format('woff'),
+    url('fonts/mylessIcons.svg?q42qo2#mylessIcons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mylessIcons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e8b6";
+}
+.icon-navigate_before:before {
+  content: "\e408";
+}
+.icon-navigate_next:before {
+  content: "\e409";
+}
+.icon-more_horiz:before {
+  content: "\e5d3";
+}
+.icon-more_vert:before {
+  content: "\e5d4";
+}
+.icon-add:before {
+  content: "\e145";
+}
+.icon-control_point:before {
+  content: "\e3ba";
+}
+.icon-apps:before {
+  content: "\e5c3";
+}
+.icon-cancel:before {
+  content: "\e5c9";
+}
+.icon-check_box:before {
+  content: "\e834";
+}
+.icon-check_box_outline_blank:before {
+  content: "\e835";
+}
+.icon-check_circle:before {
+  content: "\e86c";
+}
+.icon-lock:before {
+  content: "\e897";
+}
+.icon-keyboard_arrow_down:before {
+  content: "\e313";
+}
+.icon-keyboard_arrow_up:before {
+  content: "\e316";
+}
+.icon-radio_button_unchecked:before {
+  content: "\e836";
+}
+.icon-person:before {
+  content: "\e7fd";
+}
+.icon-personal_video:before {
+  content: "\e63b";
+}
+.icon-phone_android:before {
+  content: "\e324";
+}
+.icon-remove:before {
+  content: "\e15b";
+}
+.icon-remove_circle_outline:before {
+  content: "\e15d";
+}
+.icon-reply:before {
+  content: "\e15e";
+}
+.icon-share:before {
+  content: "\e80e";
+}
+.icon-download:before {
+  content: "\e8d7";
+}
+.icon-thumb_down:before {
+  content: "\e8db";
+}
+.icon-thumb_up:before {
+  content: "\e8dc";
+}
+.icon-view_list:before {
+  content: "\e8ef";
+}
+.icon-view_module:before {
+  content: "\e8f0";
+}

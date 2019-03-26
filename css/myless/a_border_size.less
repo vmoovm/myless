@@ -1,0 +1,15 @@
+// 依赖关系: a_config_size.less\a_border_color.less
+
+// -----------------------------------------------------
+// 边框 border:b t:top/b:bottom/r:right/l:left/o:四边； 方向  @w:粗细，@c:颜色，@s:类型 
+// -----------------------------------------------------
+.border (@color: @bdColor, @width: 1px, @style: solid){ border: @width @color @style;}						// o  border
+.border-t (@color: @bdColor, @width: 1px, @style: solid){ border-top: @width @color @style;} 				// t  border-top
+.border-b (@color: @bdColor, @width: 1px, @style: solid){ border-bottom: @width @color @style;}				// b  border-bottom
+.border-r (@color: @bdColor, @width: 1px, @style: solid){ border-right: @width @color @style;}				// r  border-right
+.border-l (@color: @bdColor, @width: 1px, @style: solid){ border-left: @width @color @style;}				// l  border-left
+.border-nt { border-top: none;} 				// nt  border-top:none;
+.border-nb { border-bottom: none;}				// nb  border-bottom:none;
+.border-nr { border-right: none;}				// nr  border-right:none;
+.border-nl { border-left: none;}				// nl  border-left:none;
+

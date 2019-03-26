@@ -1,0 +1,34 @@
+// 依赖关系: a_config_size.less
+
+
+/*-----------------------------------------------------
+ 统一间距margin top:t/bottom:b/right:r/left:l
+-----------------------------------------------------*/
+// 外边距仅限内部调用 
+.margin (@size: @margin-md) { margin: @size;}
+.margin-t (@size: @margin-lg) { margin-top: @size;}
+.margin-r (@size: @margin-lg) { margin-right: @size;}
+.margin-b (@size: @margin-lg) { margin-bottom: @size;}
+.margin-l (@size: @margin-lg) { margin-left: @size;}
+.margin-t-b (@sizeTop: @margin-md, @sizeBottom: @margin-lg) {
+	margin-top: @sizeTop;
+	margin-bottom: @sizeBottom;
+}
+.margin-b-t (@sizeBottom: @margin-lg, @sizeTop: @margin-md) {
+	margin-top: @sizeTop;
+	margin-bottom: @sizeBottom;
+}
+.margin-l-r (@sizeLeft: @margin-sm, @sizeRight: @margin-lg) {
+	margin-left: @sizeLeft;
+	margin-right: @sizeRight;
+}
+.margin-r-l (@sizeRight: @margin-lg, @sizeLeft: @margin-sm) {
+	margin-left: @sizeLeft;
+	margin-right: @sizeRight;
+}
+.margin-tb-lr (@sizeTopBottom: @margin-lg, @sizeLeftRight: @margin-sm){
+	margin: @sizeTopBottom @sizeLeftRight;
+}
+.margin-lr-tb (@sizeLeftRight: @margin-sm, @sizeTopBottom: @margin-lg){
+	margin: @sizeTopBottom @sizeLeftRight;
+}

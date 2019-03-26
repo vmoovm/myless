@@ -1,0 +1,110 @@
+@import "imports.less";	// 
+/*-----------------------------------------------------
+banner
+-----------------------------------------------------*/
+.banner {  position: relative; background-color: @bgColor-light;
+	&-imgs { height: 500px;}
+	&-progress { position: absolute; bottom: 0; left: 0; right: 0; height: 40px; background: rgba(255, 255, 255, .3); text-align: center;
+		span { display: inline-block; width: 10px; height: 10px; margin: 15px 5px; border-radius: 50%; background-color: @bgColor-white;
+			&.cur { background-color: @bgColor-main;}
+		}
+	}
+}
+
+/*-----------------------------------------------------
+图标导航
+-----------------------------------------------------*/
+.navIcons {
+	&-item { width: 130px; height: 100px; text-align: center;}
+	&-pic { 
+		i {.iconSize-sm(); color: @iconColor-main;}
+		&:hover {
+			i { color: @iconColor-main-hover;}
+		}
+	}
+	&-tt { margin-top: 10px; .fontSize-sm(); color: @color;}
+}
+
+
+/*-----------------------------------------------------
+lisetText
+-----------------------------------------------------*/
+.listText {}
+.listText-box { width: 860px;
+	li { .padding-t-b(); .border-b(@bdColor, 1px, dashed);
+		i { display: inline-block; vertical-align: middle; width: 6px; height: 6px; margin-right: 10px; border-radius: 50%; background-color: @bgColor-main;}
+		a { display: inline-block; vertical-align: middle; .lineHeight(); .fontSize-sm();}
+		span { float: right; padding-right: 30px; .fontSize-xm(); color: @color-gray;}
+	}
+}
+
+/*-----------------------------------------------------
+listHot
+-----------------------------------------------------*/
+.listHot { width: 300px;}
+.listHot-box {
+	li { .padding-t-b(); .border-b(@bdColor, 1px, dashed);
+		i { display: inline-block; vertical-align: middle; width: 20px; height: 20px; line-height: 20px; text-align: center; margin-right: 10px; background-color: @bgColor-gray;}
+		a { display: inline-block; width: 230px; vertical-align: middle; .lineHeight(); .overflow();  .fontSize-sm();
+		}
+		&.hot {
+			i{ background-color: @bgColor-main; color: @color-white;}
+		}
+	}
+}
+
+/*-----------------------------------------------------
+textImg
+-----------------------------------------------------*/
+.textImg {
+	&-list {}
+	&-row { height: 70px; padding-top: 10px; .border-b(@bdColor, 1px, dashed);}
+	&-pic { width: 60px; height: 60px; margin-right: 12px;
+		img { width: 100%; height: 100%;}
+	}
+	&-info {
+		dt { .fontSize-md(); .lineHeight-lg();}
+		dd { .fontSize-xm(); .lineHeight-xm(); color: @color-gray;}
+	}
+	&-media { text-align: right; padding-right: 30px;
+		li { display: inline-block; width: 60px; .iconSize();
+			a { color: @iconColor-gray; line-height: 60px;
+				&.selected,
+				&:hover { color: @iconColor-main;}
+				
+			}
+		}
+	}
+	&-checkbox { width: 80px; margin-top: 10px; text-align: center;
+		input { width: 0; height: 0;}
+		label { display: inline-block; color: @iconColor-auxi; font-size: 34px;}	
+	}
+}
+
+
+/*-----------------------------------------------------
+其他
+-----------------------------------------------------*/
+.mylessIcons {
+	li { display: inline-block; width: 20%; margin-bottom: 5px; .height-et(); .lineHeight-et(); .border();
+		i { color: @color-light; .fontSize-lg(); vertical-align: middle; margin-right: 5px;}
+		span { display: inline-block; vertical-align: middle;}
+		&:hover { .border(@bdColor-main);
+			i,
+			span { color: @color-main;}
+		}
+	}
+}
+
+.listImages {
+	&-item { float: left; width: 285px; padding-left: 20px;
+		&.first { padding-left: 0;}
+	}
+	&-pic { width: 285px; height: 220px;
+		img { width: 100%;}
+	}
+	&-info { padding-bottom: 20px;
+		h2 { padding-top:5px; .lineHeight-et(); .fontSize-md(); .overflow();}
+		p { .lineHeight-md();.fontSize-sm; color: @color-gray}
+	}
+}

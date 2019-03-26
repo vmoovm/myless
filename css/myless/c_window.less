@@ -1,0 +1,14 @@
+// 依赖关系: a_config_color.less \ a_config_size.less \ a_border_color.less \ a_border_size.less \ a_font_color.less
+
+/*-----------------------------------------------------
+功能性弹层
+-----------------------------------------------------*/
+.window { position: fixed; left: 0; top: 0; right: 0; bottom: 0; height: 100%; width: 100%; background: rgba(0, 0, 0, .5); filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#0C000000, endColorstr=#0C000000); z-index: 1000;}
+.window-box { position: relative; width: 400px; margin: 10% auto; background-color: @bgColor-white; .borderRadio; overflow: hidden; color: @color-white; font-size: 18px}
+.window-header { position: absolute; left: 0; top: 0; right: 0; height: 40px; background-color: @bgColor-main;}
+.window-title { position: absolute; left: 0; top: 0; right: 0; line-height: 40px; text-align: center; font-size: 18px;}
+.window-close { position: absolute; top: 0; right: 0; width: 40px; height: 40px; line-height: 40px; text-align: center; color: @color-white;}
+.window-body { height: auto; margin-top: 40px; padding: 30px 30px 20px; line-height: 1.5;}
+.window-txt { font-size: 18px; text-align: center; color: @color;}
+.window-footer { padding: 30px; padding-bottom: 40px; .border-t();}
+.window-btn { text-align: center;}

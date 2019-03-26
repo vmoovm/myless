@@ -1,0 +1,150 @@
+// pc版
+
+// 改色方案目的：
+// 1.大中型项一旦开发，很难实现改色，而且项目的配色不统一
+// 2.对现有模板调色，作为新用户的定制需求，减少开发量
+
+//前缀说明： 
+// 按复用及不同场景共分为5个等级： 复用级别a-d(4个级别)、  _下划线前不加字母为机动级别，在不同场景，随时成为任意级别
+
+// 后缀说明：
+// color仅为配色方案；size为附加样式组合，其中，2个前后缀中间名字相同的文件，后缀size文件依赖于color文件
+
+// 讨论的问题有：
+// 开讨论会的意义是，听听大家的意见和建议，不做结论
+// 
+// 请根据自己的开发过程中遇到的问题及开发经验，结合自己想法考虑以下问题
+// 1.优先级如何安排更合理
+// 2.前后缀名字是否有更好建议
+// 3.是否有必要分离颜色和尺寸
+// 4.没有加前后缀的是否也要加前后缀，请说明理由
+// 5.还缺少什么，任何意见，比如少什么常用模块\js组件等等
+
+
+/* 必读  */
+
+/*-----------------------------------------------------
+ 类型:
+ 字体颜色\背景颜色\按钮颜色\边框颜色\图标颜色
+ 字体大小\图标大小\按钮大小\内边距\外边距
+ 
+ 颜色：
+ 主色（自定义）\ 辅色（自定义）\ 原始色（暗色系）\ 信息色（蓝色系）\  通过色（绿色系）\ 危险色（红色系）\ 警告色（黄色系）\ 禁止色（灰色系）\ 默认色（自定义）
+
+尺寸：
+特小 	小 	中 	大 	特大 
+
+区块：
+头 \ 导航  \ 主体 \ 尾
+
+功能：
+登录 \ 注册 \ 表单 \ 分页  \ 消息弹层 \ 提醒弹层  \ 功能弹层  \ 下拉框 \ 表格 \ 菜单 \ 搜索 \ 文章 \ 图文列表 \ 文本列表 \ 标题  \ 标签页 \ 返回顶部
+ 
+ 应用技巧： 
+1.按功能和行为调用样式，禁止按颜色值调用；  例：success与主色调相同，成功按钮禁止相互调主色调颜色；
+2.严格按类型调用变量，禁止混搭调用; 例：字号禁止相互调用图标字号变量；内边距禁止相互调用外边距变量；
+3.
+-----------------------------------------------------*/
+/*-----------------------------------------------------
+大小简写：
+x-small: 	特小 xm
+small: 		小	sm
+middle: 	中 	md
+large: 		大 	lg
+extra: 		特大 et
+-----------------------------------------------------*/
+
+
+// 必读：
+/*-----------------------------------------------------
+大小简写：
+x-small: 	特小 xm
+small: 		小	sm
+middle: 	中 	md
+large: 		大 	lg
+extra: 		特大 et
+-----------------------------------------------------*/
+/*-----------------------------------------------------
+位置简写：
+top：		上：t
+bottom：		下：b
+left： 		左：l
+right：		右：r
+-----------------------------------------------------*/
+
+
+// 方案一（全部 ）
+@import "a_config_color.less";				// 公共配色
+@import "a_config_size.less";				// 公共尺寸配置
+@import "a_font_color.less";			    // 字体配色
+@import "a_font_size.less";				    // 字体大小
+@import "a_icon_color.less";			    // 图标配色
+@import "a_icon_size.less";				    // 图标尺寸
+@import "reset.less";						// 普通初始化
+@import "reset_artical.less";				// 文章初始化
+@import "a_border_color.less";			    // 边框配色
+@import "a_border_size.less";			    // 边框函数
+@import "a_background_color.less";		    // 背景配色
+@import "a_button_color.less";			    // 按钮配色
+@import "a_button_size.less";			    // 按钮尺寸
+@import "b_margin_size.less";			    // 外边距
+@import "b_padding_size.less";			    // 内边距
+@import "b_height_size.less";			    // 高与行高
+@import "b_borderRadio_size.less";		    // 圆角尺寸
+@import "b_page.less";					    // 分页
+@import "b_utilities.less";				    // 常规组合
+@import "b_message.less";				    // 常规组合
+@import "c_alert.less";					    // 黑框提示
+@import "c_window.less";				    // 功能性弹窗
+@import "c_triangle.less";				    // 三角图标
+@import "c_flex.less";					    // 弹性盒子
+@import "c_gradient.less";				    // 渐变函数
+
+// 方案二：
+// （仅配色）
+// @import "a_config_color.less";			// 公共配色
+// @import "a_config_size.less";			// 公共尺寸配置
+// @import "a_font_color.less";				// 字体配色
+// @import "a_font_size.less";				// 字体大小
+// @import "a_border_color.less";			// 边框配色
+// @import "a_background_color.less";		// 背景配色
+// @import "a_button_color.less";			// 按钮配色
+
+// 可选方案
+// @import "a_config_size.less";			// 公共尺寸配置
+// @import "reset.less";					// 普通初始化
+// @import "reset_artical.less";			// 文章初始化
+// @import "a_font_size.less";				// 字体大小
+// @import "a_icon.size.less";				// 图标尺寸
+// @import "a_border_size.less";			// 边框函数
+// @import "a_button_size.less";			// 按钮尺寸
+// @import "b_margin_size.less";			// 外边距
+// @import "b_padding_size.less";			// 内边距
+// @import "b_height_size.less";			// 高与行高
+// @import "b_borderRadio_size.less";		// 圆角尺寸
+// @import "b_page.less";					// 分页
+// @import "b_utilities.less";				// 常规组合
+// @import "b_message.less";				// 常规组合
+// @import "c_alert.less";					// 黑框提示
+// @import "c_window.less";					// 功能性弹窗
+// @import "c_table.less";					// 表格
+// @import "c_triangle.less";				// 三角图标
+// @import "c_flex.less";					// 弹性盒子
+// @import "c_gradient.less";				// 渐变函数
+
+// 考虑去掉的
+// @import "b_flex.less";					// 弹性盒子
+// @import "b_borderRadio_size.less";		// 圆角尺寸
+// @import "b_utilities.less";				// 常规组合
+// @import "b_message.less";				// 常规组合
+// @import "c_alert.less";					// 黑框提示
+// @import "c_flex.less";					// 弹性盒子
+// @import "c_gradient.less";				// 渐变函数
+
+// 预增加
+// @import "b_navs.less";					// 导航
+// @import "c_form.less";					// 表单
+// @import "c_dropdowns.less";				// 下拉框
+// @import "d_tooltip.less";				// 气泡
+// @import "d_progress-bars.less";			// 进度条
+// @import "../mylessIcons/mylessIcons.less";			// icon

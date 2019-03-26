@@ -1,0 +1,38 @@
+/*----------------------------------------------------
+reset 常规初始化
+-----------------------------------------------------*/
+*html{ background-image:url("IE6-fixed-FangDou"); background-attachment:fixed;}
+body,ul,ol,dl,dt,dd,li,p,h1,h2,h3,h4,h5,h6,form,label,img,div{
+border:0;margin:0px; padding:0;}
+
+fieldset,table,td,th{
+margin:0px; padding:0;}
+
+li,dd,dl,dt {list-style-type:none;}
+table {border-collapse:collapse;} 
+b,em,i,u,strong{font-weight:normal;font-style:normal;text-decoration:none;}
+
+// -----------------------------------------------------
+// font-family
+// -----------------------------------------------------
+@family: Tahoma,Helvetica,Arial,'Microsoft YaHei',sans-serif;				// 默认字体
+@family-st: '宋体';															// 宋体 	song ti
+@family-yh: '微软雅黑','Microsoft YaHei';										// 雅黑	ya hei
+@family-en: 'Helvetica Neue',Helvetica,Arial,sans-serif;					// 英文	en enlish
+@family-cn: Tahoma,Helvetica,Arial,'Microsoft YaHei',sans-serif;			// 英/汉	cn china
+.family {font-family: @family;}
+.family-st {font-family: @family-st;}
+.family-yh {font-family: @family-yh;}
+.family-en {font-family: @family-en;}
+.family-cn {font-family: @family-cn;}
+/*-----------------------------------------------------
+User-defined
+-----------------------------------------------------*/
+h1,h2,h3,h4,h5,h6 { .family(); .fontSize(); font-weight:normal;}	
+body { .fontSize(); .family(); color: @color; background-color: @bgColor;}
+input,select,textarea{ margin: 0; padding:0; vertical-align:middle; .family(); color: @color; outline:none; resize:none;}
+
+a { color: @color; text-decoration: none; }
+a:hover { color: @color-main; text-decoration: none; }
+
+.wrap (@wrap: @wrap) { width:@wrap; margin-left: auto; margin-right: auto;}

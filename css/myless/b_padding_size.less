@@ -1,0 +1,34 @@
+// 依赖关系: a_config_size.less
+// -----------------------------------------------------
+// 统一间距padding top:t/bottom:b/right:r/left:l
+// -----------------------------------------------------
+// 内边距仅限内部调用
+.padding (@size: @padding-md) { padding: @size;}
+.padding-t (@size: @padding-sm) { padding-top: @size;}
+.padding-r (@size: @padding-sm) { padding-right: @size;}
+.padding-b (@size: @padding-sm) { padding-bottom: @size;}
+.padding-l (@size: @padding-sm) { padding-left: @size;}
+.padding-t-b (@sizeTop: @padding-md, @sizeBottom: @padding-sm) {
+	padding-top: @sizeTop;
+	padding-bottom: @sizeBottom;
+}
+.padding-b-t (@sizeBottom: @padding-sm, @sizeTop: @padding-md) {
+	padding-top: @sizeTop;
+	padding-bottom: @sizeBottom;
+}
+.padding-l-r (@sizeLeft: @padding-sm, @sizeRight: @padding-sm) {
+	padding-left: @sizeLeft;
+	padding-right: @sizeRight;
+}
+.padding-r-l (@sizeRight: @padding-sm, @sizeLeft: @padding-sm) {
+	padding-left: @sizeLeft;
+	padding-right: @sizeRight;
+}
+.padding-tb-lr (@sizeTopBottom: @padding-sm, @sizeLeftRight: @padding-sm){
+	padding: @sizeTopBottom @sizeLeftRight;
+}
+.padding-lr-tb (@sizeLeftRight: @padding-sm, @sizeTopBottom: @padding-sm){
+	padding: @sizeTopBottom @sizeLeftRight;
+}
+
+

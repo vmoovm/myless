@@ -1,0 +1,41 @@
+// 依赖关系: a_config_color.less
+
+/*-----------------------------------------------------
+三角形 triangle @widthMin:粗细, @widthMax:粗细，@color:颜色
+-----------------------------------------------------*/
+@triangle-fine: 5px; 		// 细
+@triangle-thick: 8px;		// 粗
+@triangle-color: @bdColor;	// 颜色
+
+.triangle-top (@widthMin: @triangle-fine, @widthMax: @triangle-thick, @color: @triangle-color) { //t 尖朝上
+	border: @widthMin transparent;
+	border-bottom: @widthMax @color;
+	border-top: 0 transparent;
+}
+.triangle-t {.triangle-top();}
+.triangle-bottom (@widthMin: @triangle-fine, @widthMax: @triangle-thick, @color: @triangle-color) { //b 尖朝下
+	border: @widthMin transparent;
+	border-top: @widthMax @color;
+	border-bottom: 0 transparent;
+}
+.triangle-b { .triangle-bottom();}
+.triangle-right (@widthMin: @triangle-fine, @widthMax: @triangle-thick, @color: @triangle-color) { //r 尖朝右
+	border: @widthMin transparent;
+	border-left: @widthMax @color;
+	border-right: 0 transparent;
+}
+.triangle-r { .triangle-right();}
+.triangle-left (@widthMin: @triangle-fine, @widthMax: @triangle-thick, @color: @triangle-color) { //l 尖朝左
+	border: @widthMin transparent;
+	border-right: @widthMax @color;
+	border-left: 0 transparent;
+}
+.triangle-l { .triangle-left();}
+.triangle-t, .triangle-b, .triangle-r, .triangle-l { // 三角公共样式
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+	border-style: solid;
+}

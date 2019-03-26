@@ -1,0 +1,22 @@
+// 依赖关系: a_background_color.less
+// -----------------------------------------------------
+// 渐变
+// -----------------------------------------------------
+.gradient (linear, @startColor: @bgColor-light, @endColor: @bgColor-white, @startPoint: 60%, @endPoint: 100%, @forward: left) { 
+	background-image: -webkit-linear-gradient(@forward, @startColor @startPoint, @endColor @endPoint);
+	background-image: -moz-linear-gradient(@forward, @startColor @startPoint, @endColor @endPoint);
+	background-image: -o-linear-gradient(@forward, @startColor @startPoint, @endColor @endPoint);
+	background-image: linear-gradient(@forward, @startColor @startPoint, @endColor @endPoint);
+	
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=@startColor, endColorstr=@endColor);
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=@startColor, endColorstr=@endColor);
+}
+.gradient (@startColor: @bgColor-light, @endColor: @bgColor-white, @startPoint: 60%, @endPoint: 100%, @forward: left) { 
+	background-image: -webkit-linear-gradient(@forward, @startColor  @startPoint, @endColor @endPoint);
+	background-image: -moz-linear-gradient(@forward, @startColor @startPoint, @endColor @endPoint);
+	background-image: -o-linear-gradient(@forward, @startColor @startPoint, @endColor @endPoint);
+	background-image: linear-gradient(@forward, @startColor @startPoint, @endColor @endPoint);
+	
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=@startColor, endColorstr=@endColor);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=@startColor, endColorstr=@endColor);
+}

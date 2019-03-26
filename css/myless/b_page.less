@@ -1,0 +1,22 @@
+// 依赖关系: a_borderRadio_size.less \ a_border_color.less \ a_border_size.less \ a_font_color.less \ a_background_color.less
+/*-----------------------------------------------------
+ 分页
+-----------------------------------------------------*/
+.page { text-align: center;
+	a { display: inline-block; margin-right: 5px; margin-left: 5px; width: 28px; line-height: 28px; .border(@bdColor-gray); .borderRadio();
+		&:hover,
+		&.cur { background-color: @bgColor-main; .border(@bdColor-main); color: @color-white;}
+		&.first,
+		&.last,
+		&.prev,
+		&.next { width: 56px; background-color: @bgColor-main; .border(@bdColor-main); color: @color-white;}
+	}
+	span { display: inline-block; margin-right: 5px; margin-left: 5px; width: 28px; line-height: 28px; .border(); .borderRadio(); color: @color-gray;
+		&.first,
+		&.last,
+		&.prev,
+		&.next { width: 56px; cursor: default; color: @color-light;}
+		&.more { margin: 0; .border(transparent);}
+	}
+	
+}

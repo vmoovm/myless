@@ -1,0 +1,93 @@
+// 依赖关系: a_button_color.less
+/* -----------------------------------------------------
+ 按钮尺寸配置
+ -----------------------------------------------------*/
+
+.btn { margin-left: 8px; margin-right: 8px; padding-left:8px; padding-right: 8px; padding-top: .3px; padding-bottom: 3px; border-radius: 2px; line-height: 20px; background: @btnColor; border: 1px @btnColor solid; color:#fff; text-align: center;
+	&:hover { color:#fff; background: @btnColor-hover; border: 1px @btnColor-hover solid;}
+	// 尺寸
+	&.xm { margin-left: 12px; margin-right: 12px; width: 84px; height: 28px; border-radius: 3px; line-height: 28px; font-size: 16px;
+		&-auto { padding-left: 12px; padding-right: 12px; height: 32px; border-radius: 3px; line-height: 32px; font-size: 16px;}
+	}
+	&.sm { margin-left: 16px; margin-right: 16px; width: 94px; height: 32px; border-radius: 3px; line-height: 32px; font-size: 18px;
+		&-auto { padding-left: 16px; padding-right: 16px; height: 36px; border-radius: 3px; line-height: 36px; font-size: 18px;}
+	}
+	&.md { margin-left: 20px; margin-right: 20px; width: 120px; height: 40px; border-radius: 4px; line-height: 40px; font-size: 20px;
+		&-auto { padding-left: 20px; padding-right: 20px; height: 40px; border-radius: 4px; line-height: 40px; font-size: 20px;}
+	}
+	&.lg { margin-left: 24px; margin-right: 24px; width:176px; height: 44px; border-radius: 5px; line-height: 44px; font-size: 22px;
+		&-auto { padding-left: 24px; padding-right: 24px; height: 44px; border-radius: 5px; line-height: 44px; font-size: 22px;}
+	}
+	&.et { margin-left: 28px; margin-right: 28px; width:192px; height: 48px; border-radius: 6px; line-height: 48px; font-size: 24px;
+		&-auto { padding-left: 30px; padding-right: 30px; height: 48px; border-radius: 6px; line-height: 48px; font-size: 24px;}
+	}
+	
+	&.danger { background: @btnColor-danger; border: 1px @btnColor-danger solid;
+		&:hover { background: @btnColor-danger-hover; border: 1px @btnColor-danger-hover solid;}
+		&.hollow { color:@btnColor-danger;
+			&:hover { color:@btnColor-danger-hover;}
+		}
+	}
+	&.success { background: @btnColor-success; border: 1px @btnColor-success solid;
+		&:hover { background: @btnColor-success-hover; border: 1px @btnColor-success-hover solid;}
+		&.hollow { color:@btnColor-success;
+			&:hover { color:@btnColor-success-hover;}
+		}
+	}
+	&.main { background: @btnColor-main; border: 1px @btnColor-main solid;
+		&:hover { background: @btnColor-main-hover; border: 1px @btnColor-main-hover solid;}
+		&.hollow { color:@btnColor-main;
+			&:hover { color:@btnColor-main-hover;}
+		}
+	}
+	&.auxi { background: @btnColor-auxi; border: 1px @btnColor-auxi solid;
+		&:hover { background: @btnColor-auxi-hover; border: 1px @btnColor-auxi-hover solid;}
+		&.hollow { color:@btnColor-auxi;
+			&:hover { color:@btnColor-auxi-hover;}
+		}
+	}
+	
+	&.dark { background: @btnColor-dark; border: 1px @btnColor-dark solid;
+		&:hover { background: @btnColor-dark-hover; border: 1px @btnColor-dark-hover solid;}
+		&.hollow { color:@btnColor-dark;
+			&:hover { color:@btnColor-dark-hover;}
+		}
+	}
+	&.gray { background: @btnColor-gray; border: 1px @btnColor-gray solid;
+		&:hover { background: @btnColor-gray-hover; border: 1px @btnColor-gray-hover solid;}
+		&.hollow { color:@btnColor-gray;
+			&:hover { color:@btnColor-gray-hover;}
+		}
+	}
+	&.light { background: @btnColor-light; border: 1px @btnColor-light solid;
+		&:hover { background: @btnColor-light-hover; border: 1px @btnColor-light-hover solid;}
+		&.hollow { color:@btnColor-light;
+			&:hover { color:@btnColor-light-hover;}
+		}
+	}
+	&.white { background: @btnColor-white; border: 1px @btnColor-white solid;
+		&:hover { background: @btnColor-white-hover; border: 1px @btnColor-white-hover solid;}
+		&.hollow { color:@btnColor-white;
+			&:hover { color:@btnColor-white-hover;}
+		}
+	}
+	
+	// 空心
+	&.hollow { color:@btnColor;
+		&:hover {  color:@btnColor-hover;}
+	}
+	&.hollow { background: none;
+		&:hover { background: none;}
+	}
+	
+	// 块/内联
+	&.block { display: block;}
+	&.inline { display: inline-block;}
+	
+	
+	
+}
+
+
+
+

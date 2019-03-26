@@ -1,0 +1,122 @@
+.clear{ clear:both; line-height:0; font-size:0;  border:none; height:0; }
+.empty { line-height:0; font-size:0;}
+.fr{ float:right;}
+.fl{ float:left;}
+.clearfix{overflow:hidden;zoom:1}
+.br { word-wrap:break-word;	word-break:break-all;}
+
+/*-----------------------------------------------------
+文字溢出省略号
+-----------------------------------------------------*/
+.overflow { overflow:hidden; white-space:nowrap; 
+	-webkit-text-overflow:ellipsis;
+	   -moz-text-overflow:ellipsis;
+	     -o-text-overflow:ellipsis;
+	        text-overflow:ellipsis;
+}
+
+/*-----------------------------------------------------
+显示和隐藏
+-----------------------------------------------------*/
+.show { display: block;}
+.hide { display: none;}
+
+/*----------------------------------------------------
+opacity tou ming:tm; @opacity:透明值0~1小数
+-----------------------------------------------------*/
+.opacity (@opacity:.5) {
+	-webkit-opacity: @opacity;
+	   -moz-opacity: @opacity;
+	     -o-opacity: @opacity;
+	        opacity: @opacity;
+	         filter: ~"alpha(opacity = multiply(@opacity, 100))";
+}
+
+/*-----------------------------------------------------
+用父限制图片大小
+-----------------------------------------------------*/
+.imgSize (@w,@h){
+	width:@w; height:@h;
+	img {
+		width:@w; height:@h;
+	}
+}
+
+/*-----------------------------------------------------
+投影
+-----------------------------------------------------*/
+.bShadow(@x: 0, @y: 0, @size: 3px, @color: #bebebe, @eclosion: 0px) {
+	-webkit-box-shadow: @x @y @size @eclosion @color;
+	   -moz-box-shadow: @x @y @size @eclosion @color;
+	     -o-box-shadow: @x @y @size @eclosion @color;
+	        box-shadow: @x @y @size @eclosion @color;
+}
+
+/*-----------------------------------------------------
+box-sizing
+-----------------------------------------------------*/
+.bSizing {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/*----------------------------------------------------
+使页面变模糊
+-----------------------------------------------------*/
+.moHu {
+	-webkit-backface-visibility:hidden;
+	-webkit-animation:nvfadeInDown .1s .1s ease both;
+	-moz-animation:nvfadeInDown .1s .1s ease both;
+	-o-animation:nvfadeInDown .1s .1s ease both;
+	animation:nvfadeInDown .1s .1s ease both;
+	}
+@-webkit-keyframes nvfadeInDown {
+	0% {
+		-webkit-filter:blur(1px);
+		filter:blur(1px);
+		opacity: 1;
+	}
+	100% {
+		-webkit-filter:blur(6px);
+		filter:blur(6px);
+		opacity: .8;
+	}
+}
+@-moz-keyframes nvfadeInDown {
+	0% {
+		-moz-filter:blur(1px);
+		filter:blur(1px);
+		opacity: 1;
+	}
+	100% {
+		-moz-filter:blur(6px);
+		filter:blur(6px);
+		opacity: .8;
+	}
+}
+@-o-keyframes nvfadeInDown {
+	0% {
+		-o-filter:blur(1px);
+		filter:blur(1px);
+		opacity: 1;
+	}
+	100% {
+		-o-filter:blur(6px);
+		filter:blur(6px);
+		opacity: .8;
+	}
+}
+@keyframes nvfadeInDown {
+	0% {
+		-webkit-filter:blur(1px);
+		filter:blur(1px);
+		opacity: 1;
+	}
+	100% {
+		-webkit-filter:blur(6px);
+		filter:blur(6px);
+		opacity: .8;
+	}
+}

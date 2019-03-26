@@ -1,0 +1,27 @@
+@import "imports.less";	// 
+
+body { .bgColor-light();}
+
+.login {
+	&-bg { height: 460px;  margin-top: 150px; .bgColor-light(); .gradient(@bgColor-white, @bgColor-main, 30%, 100%, bottom);}
+	&-rel { position: relative; height: 420px;}
+	&-site { position: absolute; right: 0; top: -50px; width: 380px; height: 420px; .border(); .bgColor-white(); .borderRadio();}
+	&-box { padding-top: 30px; }
+	&-title { height: 60px; .fontSize-tt(); text-align: center;}
+	&-row { position: relative; padding-top: 18px; padding-left: 40px;}
+	&-input { width: 240px; height: 34px; padding-left: 36px; .border(@bdColor-gray); vertical-align:top; 
+		&:focus { .border(@bdColor-main);}
+	}
+	&-verify { 
+		input {width: 120px; padding-left: 10px;}
+		img { margin-left: 16px; height: 36px;}
+	}
+	&-icon { position: absolute; width: 36px; height: 36px; margin-top: 5px; margin-left: 5px; .iconSize(); .iconColor-gray();}
+	&-btn { padding-top: 30px; padding-left: 30px;
+		a { display: inline-block;}
+	}
+	&-forget { position: absolute; bottom: 70px; right: 30px; text-align: right;
+		a { .fontSize(); .color-main();}
+	}
+}
+

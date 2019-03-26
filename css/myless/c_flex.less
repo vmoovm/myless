@@ -1,0 +1,136 @@
+
+/*-----------------------------------------------------
+弹性盒子 box-align:center:ac /box-pack:center:pc /box-pack:end:pe/
+-----------------------------------------------------*/
+.flex { 
+	display: -webkit-box;
+	display: -webkit-flex;
+}
+.flex-ac { 
+	display: -webkit-box; 
+	display: -webkit-flex; 
+	-webkit-box-align: center; 
+	-webkit-align-items: center;
+}
+.flex-ac-pc,
+.flex-pc-ac { 
+	display: -webkit-box; 
+	-webkit-box-align: center; 
+	-webkit-box-pack: center; 
+	display: -webkit-flex; 
+	-webkit-align-items: center; 
+	-webkit-justify-content:center;
+}
+.flex-ac-pj,
+.flex-pj-ac {
+    display: -webkit-box;
+    display: -webkit-flex;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    -webkit-align-items: center;
+    -webkit-justify-content: space-between;
+}
+
+.flex-ac-pe,
+.flex-pe-ac {
+    display: -webkit-box;
+    display: -webkit-flex;
+    -webkit-box-align: center;
+    -webkit-box-pack: end;
+    -webkit-align-items: center;
+    -webkit-justify-content: flex-end;
+}
+
+.flex-pc {
+    display: -webkit-box;
+    display: -webkit-flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+}
+
+.flex-pj {
+    display: -webkit-box;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+}
+
+.flex-pe {
+    display: -webkit-box;
+    display: -webkit-flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+}
+
+// box-flex
+.boxFlex {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+}
+
+// box-align:ba /center:c /start:s /end:e
+.boxAlign-c {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+}
+
+.boxAlign-s {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+}
+
+.boxAlign-e {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+}
+
+// box-pack:bp /center:c /start:s /end:e
+.boxPack-c {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+}
+
+.boxPack-s {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+}
+
+.boxPack-e {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+}
+
+.boxPack-j {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+}
+
+
+
+/*-----------------------------------------------------
+一像素边框
+-----------------------------------------------------*/
+.line1px-b (@color1: @bdColor, @percent1: 50%, @color: transparent, @percent: 100%) {
+	background-image: -webkit-linear-gradient(@color1 @percent1, @color @percent); 
+	background-position:left bottom; 
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+}
+.line1px-t (@color1: @bdColor, @percent1: 50%, @color: transparent, @percent: 100%) {
+	background-image: -webkit-linear-gradient(@color1 @percent1, @color @percent); 
+	background-position: left top; 
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+}
+.line1px-b-t (@color1: @bdColor, @percent1: 50%, @color: transparent, @percent: 100%) {
+	background-image: -webkit-linear-gradient(@color1 @percent1, @color @percent) , -webkit-linear-gradient(@color1 @percent1, @color @percent);
+	background-position: left top, left bottom;
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+}
+.line1px-t-b (@color1: @bdColor, @percent1: 50%, @color: transparent, @percent: 100%) {
+	background-image: -webkit-linear-gradient(@color1 @percent1, @color @percent) , -webkit-linear-gradient(@color1 @percent1, @color @percent);
+	background-position: left top, left bottom; 
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+}
